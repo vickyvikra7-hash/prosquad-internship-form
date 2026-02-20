@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProSquad Internship Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white shadow-2xl rounded-2xl w-full max-w-3xl p-8">
+    <h1 class="text-3xl font-bold text-center text-black mb-2">Internship Application Form</h1>
+    <p class="text-center text-gray-600 mb-6">ProSquad Consulting Pvt Ltd - Financial Advisory & Business Management</p>
+
+    <form class="space-y-6" method="POST" enctype="multipart/form-data">
+      <!-- Basic Details -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Basic Details</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Full Name" class="p-2 border rounded-lg" required>
+          <input type="date" class="p-2 border rounded-lg" required>
+          <input type="email" placeholder="Email ID" class="p-2 border rounded-lg" required>
+          <input type="tel" placeholder="Phone Number" class="p-2 border rounded-lg" required>
+          <input type="text" placeholder="Current City" class="p-2 border rounded-lg" required>
+          <input type="url" placeholder="LinkedIn Profile (Optional)" class="p-2 border rounded-lg">
+        </div>
+      </div>
+
+      <!-- Academic Details -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Academic Details</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Highest Qualification" class="p-2 border rounded-lg" required>
+          <input type="text" placeholder="Course Pursuing / Completed" class="p-2 border rounded-lg" required>
+          <select class="p-2 border rounded-lg" required>
+            <option value="">Specialization</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+            <option>HR</option>
+            <option>Others</option>
+          </select>
+          <input type="text" placeholder="College / University Name" class="p-2 border rounded-lg" required>
+          <input type="number" placeholder="Year of Graduation / Pursuing" class="p-2 border rounded-lg" required>
+          <input type="text" placeholder="CGPA / Percentage" class="p-2 border rounded-lg">
+        </div>
+      </div>
+
+      <!-- Internship Details -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Internship Details</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <select class="p-2 border rounded-lg" required>
+            <option value="">Internship Domain</option>
+            <option>Financial Analysis</option>
+            <option>Business Development</option>
+            <option>Marketing</option>
+            <option>Operations</option>
+            <option>Research</option>
+          </select>
+          <select class="p-2 border rounded-lg" required>
+            <option value="">Internship Type</option>
+            <option>Full Time</option>
+            <option>Part Time</option>
+          </select>
+          <input type="date" class="p-2 border rounded-lg" required>
+          <select class="p-2 border rounded-lg" required>
+            <option value="">Internship Duration</option>
+            <option>1 Month</option>
+            <option>2 Months</option>
+            <option>3 Months</option>
+            <option>6 Months</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Skills</h2>
+        <div class="grid grid-cols-2 gap-2">
+          <label><input type="checkbox"> MS Excel</label>
+          <label><input type="checkbox"> Financial Modelling</label>
+          <label><input type="checkbox"> Communication Skills</label>
+          <label><input type="checkbox"> Market Research</label>
+          <label><input type="checkbox"> Data Analysis</label>
+          <label><input type="checkbox"> Presentation Skills</label>
+          <label><input type="checkbox"> Digital Marketing</label>
+          <label><input type="checkbox"> Sales Skills</label>
+          <label><input type="checkbox"> Accounting Basics</label>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Certifications</h2>
+        <input type="file" class="p-2 border rounded-lg w-full" multiple>
+      </div>
+
+      <!-- Interests -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Areas of Interest</h2>
+        <div class="grid grid-cols-2 gap-2">
+          <label><input type="checkbox"> Financial Advisory</label>
+          <label><input type="checkbox"> Investment Planning</label>
+          <label><input type="checkbox"> Business Strategy</label>
+          <label><input type="checkbox"> Marketing</label>
+          <label><input type="checkbox"> Entrepreneurship</label>
+          <label><input type="checkbox"> Client Handling</label>
+          <label><input type="checkbox"> Research & Analysis</label>
+        </div>
+      </div>
+
+      <!-- CV Upload -->
+      <div>
+        <h2 class="text-xl font-semibold text-black mb-2">Upload Resume</h2>
+        <input type="file" class="p-2 border rounded-lg w-full" required>
+      </div>
+
+      <div class="flex items-center">
+        <input type="checkbox" required class="mr-2"> I hereby declare that the information provided is true and correct.
+      </div>
+
+      <button type="submit" class="w-full bg-black text-white p-3 rounded-xl text-lg">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
